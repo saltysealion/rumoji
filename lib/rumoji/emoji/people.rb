@@ -6,6 +6,11 @@ require 'set'
 module Rumoji
   class Emoji
     PEOPLE = Set[
+
+      self.new("\u{1F3CB}", [:type_1_2], "EMOJI MODIFIER FITZPATRICK TYPE-1 and 2"),
+      self.new("\u{1F3FC}", [:type_3], "EMOJI MODIFIER FITZPATRICK TYPE-3"),
+      self.new("\u{1F3FD}", [:type_4], "EMOJI MODIFIER FITZPATRICK TYPE-4"),
+      self.new("\u{1F3FE}", [:type_5], "EMOJI MODIFIER FITZPATRICK TYPE-5"),
       self.new("\u{1F3FF}", [:type_6], "EMOJI MODIFIER FITZPATRICK TYPE-6"),
       self.new("\u{1F468}\u{200D}\u{1F469}\u{200D}\u{1F467}", [:family_man_woman_girl], "Family (Man, Woman, Girl)"),
       self.new("\u{1F4FF}", [:rosary_beads], "ROSARY BEADS"),
