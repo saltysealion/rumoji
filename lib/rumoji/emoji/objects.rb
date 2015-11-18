@@ -6,6 +6,23 @@ require 'set'
 module Rumoji
   class Emoji
     OBJECTS = Set[
+      self.new("\u{1F37E}", [:champagne], "CHAMPAGNE"),
+      self.new("\u{1F37F}", [:popcorn], "POPCORN"),
+      self.new("\u{1F32F}", [:burrito], "BURRITO"),
+      self.new("\u{1F32E}", [:taco], "TACO"),
+      self.new("\u{1F9C0}", [:hot_dog], "HOT DOG"),
+      self.new("\u{1F3F9}", [:archery], "BOW AND ARROW"),
+      self.new("\u{1F3F8}", [:badminton], "BADMINTON RACQUET AND SHUTTLECOCK"),
+      self.new("\u{1F3D3}", [:ping_pong], "TABLE TENNIS PADDLE AND BALL"),
+      self.new("\u{1F3D2}", [:ice_hockey], "ICE HOCKEY STICK"),
+      self.new("\u{1F3D1}", [:hockey], "FIELD HOCKEY STICK AND BALL"),
+      self.new("\u{1F3D0}", [:volleyball], "VOLLEYBALL"),
+      self.new("\u{1F3CF}", [:cricket], "CRICKET BAT AND BALL"),
+      self.new("\u{1F54E}", [:menorah], "MENORAH WITH NINE BRANCHES"),
+      self.new("\u{1F54D}", [:synagogue], "SYNAGOGUE EMOJI"),
+      self.new("\u{1F54C}", [:mosque], "MOSQUE EMOJI"),
+      self.new("\u{1F54B}", [:mecca], "MECCA EMOJI"),
+      self.new("\u{1F3FA}", [:jar], "JAR"),
       self.new("\u{1F38D}", [:bamboo], "PINE DECORATION"), # "Japanese new year's door decoration
       self.new("\u{1F49D}", [:gift_heart], "HEART WITH RIBBON"),
       self.new("\u{1F38E}", [:dolls], "JAPANESE DOLLS"), # "Japanese Hinamatsuri or girls' doll festival"

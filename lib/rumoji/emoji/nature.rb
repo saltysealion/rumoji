@@ -6,8 +6,13 @@ require 'set'
 module Rumoji
   class Emoji
     NATURE = Set[
-      self.new("\u{2600}" , [:kevin], "BLACK SUN WITH RAYS"),
-      #self.new("\u{2600}" , [:sunny], "BLACK SUN WITH RAYS"),
+      self.new("\u{1F982}", [:scorpion], "Scorpion"),
+      self.new("\u{1F980}", [:crab], "CRAB"),
+      self.new("\u{1F983}", [:turkey], "TURKEY"),
+      self.new("\u{1F984}", [:unicorn], "UNICORN"),
+      self.new("\u{1F981}", [:lion], "LION"),
+      self.new("\u{1F916}", [:robot], "ROBOT"),
+      #self.new("\u{2600}", [:sunny], "BLACK SUN WITH RAYS"),
       self.new("\u{2614}" , [:umbrella], "UMBRELLA WITH RAIN DROPS"),
       self.new("\u{2601}" , [:cloud]),
       self.new("\u{2744}" , [:snowflake]),

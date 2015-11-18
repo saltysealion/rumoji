@@ -6,6 +6,18 @@ require 'set'
 module Rumoji
   class Emoji
     PEOPLE = Set[
+      self.new("\u+{1F468}\u+{200D}\u+{1F469}\u+{200D}\u+{1F467}", [:family], "Family (Man, Woman, Girl)"),
+
+      self.new("\u{1F4FF}", [:rosary_beads], "ROSARY BEADS"),
+      self.new("\u{1F918}", [:rock_on], "ROCK ON HANDS"),
+      self.new("\u{1F911}", [:rich], "RICH FACE"),
+      self.new("\u{1F915}", [:clumsey], "CLUMSEY FACE"),
+      self.new("\u{1F912}", [:sick], "SICK FACE"),
+      self.new("\u{1F643}", [:silly], "SILLY FACE"),
+      self.new("\u{1F913}", [:nerd], "NERD FACE"),
+      self.new("\u{1F910}", [:zip_it], "ZIP IT FACE"),
+      self.new("\u{1F644}", [:eye_roll], "EYE ROLL"),
+      self.new("\u{1F914}", [:thinker], "THINKER FACE"),
       self.new("\u{1F917}", [:hug], "HUGGING FACE"),
       self.new("\u{1F604}", [:smile], "SMILING FACE WITH OPEN MOUTH AND SMILING EYES"),
       self.new("\u{1F606}", [:laughing], "SMILING FACE WITH OPEN MOUTH AND TIGHTLY-CLOSED EYES"),
