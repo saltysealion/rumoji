@@ -6,7 +6,7 @@ require 'set'
 module Rumoji
   class Emoji
     PEOPLE = Set[
-      self.new("\u+{1F468}\u+{200D}\u+{1F469}\u+{200D}\u+{1F467}", [:family], "Family (Man, Woman, Girl)"),
+      self.new("\u{1F468}\u{200D}\u{1F469}\u{200D}\u{1F467}", [:family], "Family (Man, Woman, Girl)"),
 
       self.new("\u{1F4FF}", [:rosary_beads], "ROSARY BEADS"),
       self.new("\u{1F918}", [:rock_on], "ROCK ON HANDS"),
