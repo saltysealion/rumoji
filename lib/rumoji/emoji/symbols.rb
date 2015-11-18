@@ -6,7 +6,7 @@ require 'set'
 module Rumoji
   class Emoji
     SYMBOLS = Set[
-      self.new("\u+{1f6d0}", [:religious_building], "RELIGIOUS BUILDING"),
+      self.new("\u{1f6d0}", [:religious_building], "RELIGIOUS BUILDING"),
       self.new("\u{1f4af}", [:"100"]),
       self.new("\u{1f522}", [:"1234"]),
       self.new("\u{1f170}", [:a]),
