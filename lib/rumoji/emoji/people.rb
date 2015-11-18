@@ -6,6 +6,7 @@ require 'set'
 module Rumoji
   class Emoji
     PEOPLE = Set[
+      self.new("\u{1F917}", [:hug], "HUGGING FACE"),
       self.new("\u{1F604}", [:smile], "SMILING FACE WITH OPEN MOUTH AND SMILING EYES"),
       self.new("\u{1F606}", [:laughing], "SMILING FACE WITH OPEN MOUTH AND TIGHTLY-CLOSED EYES"),
       self.new("\u{1F60A}", [:blush], "SMILING FACE WITH SMILING EYES"),
