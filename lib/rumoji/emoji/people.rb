@@ -7,8 +7,8 @@ module Rumoji
   class Emoji
     PEOPLE = Set[
       self.new("\u{1F469}\u{200D}\u{2764}\u{FE0F}\u{200D}\u{1F48B}u\{200D}\u{1F469}", [:woman_kiss_woman], "Kiss (Woman, Woman)"),
-      self.new("\u{1F46r88}\u{200D}\u{2764}\u{FE0F}\u{200D}\u{1F48B}u\{200D}\u{1F468}", [:man_kiss_man], " Kiss (Man, Man)"),
-      self.new("\u{1F46r88}\u{200D}\u{2764}\u{FE0F}\u{200D}\u{1F468}", [:man_heart_man], "Couple With Heart (Man, Man)"),
+      self.new("\u{1F468}\u{200D}\u{2764}\u{FE0F}\u{200D}\u{1F48B}u\{200D}\u{1F468}", [:man_kiss_man], " Kiss (Man, Man)"),
+      self.new("\u{1F468}\u{200D}\u{2764}\u{FE0F}\u{200D}\u{1F468}", [:man_heart_man], "Couple With Heart (Man, Man)"),
       self.new("\u{1F469}\u{200D}\u{2764}\u{FE0F}\u{200D}\u{1F469}", [:woman_heart_woman], "Couple With Heart (Woman, Woman)"),
       self.new("\u{1F468}\u{200D}\u{1F468}\u{200D}\u{1F467}\u{200D}\u{1F467}", [:family_man_man_girl_girl], "Family (Man, Man, Girl, Girl)"),
       self.new("\u{1F468}\u{200D}\u{1F468}\u{200D}\u{1F466}\u{200D}\u{1F466}", [:family_man_man_boy_boy], "Family (Man, Man, Boy, Boy)"),
