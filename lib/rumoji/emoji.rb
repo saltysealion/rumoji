@@ -19,8 +19,10 @@ module Rumoji
       ":#{symbol}:"
     end
 
-    def include?(symbol)
-      @cheat_codes.include? symbol.to_sym
+    def include?(s)
+      puts s.inspect
+      puts @cheat_codes.inspect
+      @cheat_codes.include? s
     end
 
     def to_s
@@ -40,7 +42,7 @@ module Rumoji
     end
 
     def multiple?
-      codepoints.size > 1
+      @codepoints.size > 1
     end
 
     autoload :PEOPLE, 'rumoji/emoji/people'
@@ -53,8 +55,8 @@ module Rumoji
 
     ALL_REGEXP = Regexp.new(ALL.map(&:string).join('|'))
 
-    def self.find(symbol)
-      ALL.find {|emoji| emoji.include? symbol }
+    def self.find(s)
+      ALL.find {|emoji| emoji.include? s}
     end
 
     STRING_LOOKUP = ALL.each.with_object({}) do |emoji, lookup|
