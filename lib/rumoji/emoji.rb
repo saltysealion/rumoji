@@ -20,8 +20,6 @@ module Rumoji
     end
 
     def include?(s)
-      puts s.inspect
-      puts @cheat_codes.inspect
       @cheat_codes.include? s
     end
 
