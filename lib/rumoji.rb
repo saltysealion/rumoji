@@ -1,4 +1,4 @@
-# -*- encoding: utf-8 -*-
+#-*- encoding: utf-8 -*-
 require "rumoji/version"
 require "rumoji/emoji"
 require 'stringio'
@@ -16,9 +16,9 @@ module Rumoji
     decoded_string = str.gsub(/:([^s:]?[\w-]+):/) {|sym| 
       (Emoji.find($1.intern) || sym).to_s 
     }   
-  
+
     # transform common references into an emoji
-    decoded_string = decoded_string.gsub(/([^s:]?[\W-]+)/) {|sym| 
+    decoded_string = decoded_string.gsub(/([\=|0-9|a-zA-Z|\W]+)/i) {|sym| 
       (Emoji.find_with_word($1.intern) || sym).to_s 
     }   
 
