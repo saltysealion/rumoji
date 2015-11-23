@@ -18,7 +18,7 @@ module Rumoji
     }   
   
     # transform common references into an emoji
-    decoded_string = decoded_string.gsub(/([^s:]?[\w-]+)/) {|sym| 
+    decoded_string = decoded_string.gsub(/([^s:]?[\W-]+)/) {|sym| 
       (Emoji.find_with_word($1.intern) || sym).to_s 
     }   
 
