@@ -4,10 +4,11 @@ module Rumoji
 
     attr_reader :name, :string
 
-    def initialize(string, symbols, name = nil)
+    def initialize(string, symbols, common_references = [],  name = nil)
       @string = string
       @codepoints = string.codepoints
       @cheat_codes = [symbols].flatten
+      @common_references = [common_references].flatten
       @name = name || @cheat_codes.first.to_s.upcase.gsub("_", " ")
     end
 
@@ -21,6 +22,10 @@ module Rumoji
 
     def include?(s)
       @cheat_codes.include? s
+    end
+
+    def include_reference?(s)
+      @common_references.include? s.to_sym
     end
 
     def to_s
@@ -55,6 +60,10 @@ module Rumoji
 
     def self.find(s)
       ALL.find {|emoji| emoji.include? s}
+    end
+
+    def self.find_with_word(s)
+      ALL.find {|emoji| emoji.include_reference? s}
     end
 
     STRING_LOOKUP = ALL.each.with_object({}) do |emoji, lookup|
